@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\bin\Debug\ConsoleLR1.exe.config
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\bin\Debug\ConsoleLR1.exe
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\bin\Debug\ConsoleLR1.pdb
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\obj\Debug\ConsoleLR1.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\obj\Debug\ConsoleLR1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\obj\Debug\ConsoleLR1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\obj\Debug\ConsoleLR1.exe
+C:\Users\Admin\source\repos\ConsoleLR1\ConsoleLR1\obj\Debug\ConsoleLR1.pdb
