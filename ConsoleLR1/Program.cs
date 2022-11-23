@@ -1,5 +1,4 @@
 ﻿using System;
-using System.CodeDom.Compiler;
 
 namespace ConsoleLR1
 {
@@ -21,7 +20,8 @@ namespace ConsoleLR1
                "\n3 - для поиска элемента" +
                "\n4 - для удаления элемента" +
                "\n5 - для очистки списка" +
-               "\n6 - для замены элемента");
+               "\n6 - для замены элемента" +
+               "\n7 - для ввода числа справа от первого");
                 int number = 0;
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
@@ -62,6 +62,11 @@ namespace ConsoleLR1
                             list.Replace(list.Search(target), number);
                         else
                             Console.WriteLine("Число не найдено");
+                        break;
+                    case 7:
+                        Console.WriteLine("Введите число для ввода правее первого");
+                        number = int.Parse(Console.ReadLine());
+                        list.AddElementRight(number);
                         break;
                 }
             }
@@ -146,15 +151,30 @@ namespace ConsoleLR1
         public void ClearList()
         {
             MyListElement tmp;
-            while(_head != null)
+            while (_head != null)
             {
                 tmp = _head.Next;
                 _head = tmp;
-            }              
+            }
         }
         public void Replace(MyListElement target, int number)
         {
             target.Value = number;
+        }
+        public void AddElementRight(int value)
+        {
+            if (_head == null)
+            {
+                AddFirstElement(value);
+                _current = _head;
+            }
+            else
+            {
+                MyListElement node = new MyListElement(null, value);
+                MyListElement tmp = _head.Next;
+                _head.Next = node;
+                node.Next = tmp;
+            }
         }
     }
 }
